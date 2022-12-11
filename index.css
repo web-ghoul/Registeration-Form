@@ -1,0 +1,487 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: ease-in-out all .3s;
+    overflow-wrap: anywhere;
+    text-transform: capitalize;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #00073D;
+    font-family: 'Cairo', sans-serif;
+    color: #fff;
+}
+
+main .container {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 80px;
+    padding: 60px;
+}
+
+main .container .reg-form .contain {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 65% 35%;
+    background-color: #000856;
+    box-shadow: #05081f 0px 7px 29px 0px;
+    position: relative;
+    border-radius: 15px;
+}
+
+main .container .reg-form .contain .form {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    gap: 20px;
+    padding: 80px 40px;
+}
+
+main .container .reg-form .contain .form .head-form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+main .container .reg-form .contain .form .head-form picture img {
+    width: 100px;
+}
+
+main .container .reg-form .contain .form .head-form .title {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main .container .reg-form .contain .form .head-form .title .head {
+    font-size: 55px;
+    font-weight: 600;
+}
+
+main .container .reg-form .contain .form .head-form .title span {
+    font-size: 28px;
+    font-weight: 400;
+    transform: translateY(-35px);
+}
+
+main .container .reg-form .contain .form form {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    gap: 20px;
+}
+
+main .container .reg-form .contain .form form .inputs {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    gap: 20px;
+}
+
+main .container .reg-form .contain .form form .inputs input {
+    outline: none;
+    border: none;
+    font-size: 24px;
+    padding: 15px 20px;
+    color: #fff;
+    width: 100%;
+    background-color: #022160;
+}
+
+main .container .reg-form .contain .form form input::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 20px;
+}
+
+main .container .reg-form .contain .form form .email {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    width: 100%;
+}
+
+main .container .reg-form .contain .form form .name,
+main .container .reg-form .contain .form form .pass {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+main .container .reg-form .contain .form form .sex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .container .reg-form .contain .form form .sex input {
+    font-size: 25px;
+    position: relative;
+}
+
+main .container .reg-form .contain .form form .sex input::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+main .container .reg-form .contain .form form .sex input::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    z-index: 10;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+main .container .reg-form .contain .form form .sex input:checked::before {
+    background-color: #01A3F1;
+}
+
+main .container .reg-form .contain .form form .sex span {
+    font-size: 25px;
+}
+
+main .container .reg-form .contain .form form .sex div label {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+main .container .reg-form .contain .form form .btns {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    gap: 30px;
+    width: 100%;
+}
+
+main .container .reg-form .contain .form form .btns button {
+    padding: 20px;
+    width: 100%;
+    background-color: #01A3F1;
+    color: #000856;
+    outline: none;
+    border: none;
+    box-shadow: #004669 0px 8px 24px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+main .container .reg-form .contain .form form .btns button:hover {
+    cursor: pointer;
+    box-shadow: none;
+}
+
+main .container .reg-form .contain>picture {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 0 15px 15px 0;
+    background-image: url("./ba394ea8-a0b1-4b23-b2f3-e4a48b0aa776.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+main .container .table .contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: #05081f 0px 7px 29px 0px;
+}
+
+main .container .table .contain table {
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    width: 100%;
+}
+
+main .container .table .contain table tbody tr,
+main .container .table .contain table thead tr {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    color: #fff;
+}
+
+main .container .table .contain table tbody tr.color {
+    background: #022160;
+}
+
+main .container .table .contain table thead tr {
+    background: #01A3F1;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 15px 15px 0 0;
+}
+
+main .container .table .contain table tr td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+main .container .table .contain table tr td:not(:first-child) {
+    border-left: 1px solid #01A3F1;
+}
+
+td,
+th {
+    padding: 20px;
+}
+
+@media (max-width:1200px) {
+    main .container {
+        gap: 50px;
+        padding: 40px;
+    }
+    main .container .reg-form .contain {
+        grid-template-columns: 65% 35%;
+        border-radius: 12px;
+    }
+    main .container .reg-form .contain .form {
+        gap: 18px;
+        padding: 60px 30px;
+    }
+    main .container .reg-form .contain .form .head-form {
+        gap: 10px;
+    }
+    main .container .reg-form .contain .form .head-form picture img {
+        width: 90px;
+    }
+    main .container .reg-form .contain .form .head-form .title .head {
+        font-size: 50px;
+    }
+    main .container .reg-form .contain .form .head-form .title span {
+        font-size: 25px;
+        transform: translateY(-30px);
+    }
+    main .container .reg-form .contain .form form {
+        gap: 18px;
+    }
+    main .container .reg-form .contain .form form .inputs {
+        gap: 18px;
+    }
+    main .container .reg-form .contain .form form .inputs input {
+        font-size: 22px;
+        padding: 13px 18px;
+    }
+    main .container .reg-form .contain .form form input::placeholder {
+        font-size: 20px;
+    }
+    main .container .reg-form .contain .form form .name,
+    main .container .reg-form .contain .form form .pass {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+    main .container .reg-form .contain .form form .sex input {
+        font-size: 25px;
+    }
+    main .container .reg-form .contain .form form .sex span {
+        font-size: 25px;
+    }
+    main .container .reg-form .contain .form form .sex div label {
+        font-size: 22px;
+    }
+    main .container .reg-form .contain .form form .btns {
+        gap: 25px;
+    }
+    main .container .reg-form .contain .form form .btns button {
+        padding: 18px;
+        font-size: 22px;
+    }
+    main .container .reg-form .contain>picture {
+        border-radius: 0 12px 12px 0;
+    }
+    main .container .table .contain table tbody tr,
+    main .container .table .contain table thead tr {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    main .container .table .contain table thead tr {
+        font-size: 25px;
+        border-radius: 12px 12px 0 0;
+    }
+    main .container .table .contain table tr td {
+        font-size: 22px;
+    }
+    td,
+    th {
+        padding: 18px;
+    }
+}
+
+@media (max-width:992px) {
+    main .container {
+        gap: 40px;
+        padding: 30px;
+    }
+    main .container .reg-form .contain {
+        grid-template-columns: 65% 35%;
+        border-radius: 12px;
+    }
+    main .container .reg-form .contain .form {
+        gap: 16px;
+        padding: 50px 25px;
+    }
+    main .container .reg-form .contain .form .head-form {
+        gap: 8px;
+    }
+    main .container .reg-form .contain .form .head-form picture img {
+        width: 80px;
+    }
+    main .container .reg-form .contain .form .head-form .title .head {
+        font-size: 45px;
+    }
+    main .container .reg-form .contain .form .head-form .title span {
+        font-size: 22px;
+        transform: translateY(-25px);
+    }
+    main .container .reg-form .contain .form form {
+        gap: 16px;
+    }
+    main .container .reg-form .contain .form form .inputs {
+        gap: 16px;
+    }
+    main .container .reg-form .contain .form form .inputs input {
+        font-size: 20px;
+        padding: 12px 16px;
+    }
+    main .container .reg-form .contain .form form input::placeholder {
+        font-size: 18px;
+    }
+    main .container .reg-form .contain .form form .name,
+    main .container .reg-form .contain .form form .pass {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    main .container .reg-form .contain .form form .sex input {
+        font-size: 22px;
+    }
+    main .container .reg-form .contain .form form .sex span {
+        font-size: 22px;
+    }
+    main .container .reg-form .contain .form form .sex div label {
+        font-size: 20px;
+    }
+    main .container .reg-form .contain .form form .btns {
+        gap: 20px;
+    }
+    main .container .reg-form .contain .form form .btns button {
+        padding: 16px;
+        font-size: 20px;
+    }
+    main .container .reg-form .contain>picture {
+        border-radius: 0 10px 10px 0;
+    }
+    main .container .table .contain table thead tr {
+        font-size: 22px;
+        border-radius: 10px 10px 0 0;
+    }
+    main .container .table .contain table tr td {
+        font-size: 20px;
+    }
+    td,
+    th {
+        padding: 16px;
+    }
+}
+
+@media (max-width:768px) {
+    main .container {
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+    }
+    main .container .reg-form .contain {
+        grid-template-columns: repeat(1, 1fr);
+        border-radius: 10px;
+    }
+    main .container .reg-form .contain .form {
+        gap: 12px;
+        padding: 40px 15px;
+    }
+    main .container .reg-form .contain .form .head-form {
+        gap: 6px;
+    }
+    main .container .reg-form .contain .form .head-form picture img {
+        width: 60px;
+    }
+    main .container .reg-form .contain .form .head-form .title .head {
+        font-size: 25px;
+    }
+    main .container .reg-form .contain .form .head-form .title span {
+        font-size: 16px;
+        transform: translateY(-15px);
+    }
+    main .container .reg-form .contain .form form {
+        gap: 12px;
+    }
+    main .container .reg-form .contain .form form .inputs {
+        gap: 12px;
+    }
+    main .container .reg-form .contain .form form .inputs input {
+        font-size: 18px;
+        padding: 10px 12px;
+    }
+    main .container .reg-form .contain .form form input::placeholder {
+        font-size: 16px;
+    }
+    main .container .reg-form .contain .form form .name,
+    main .container .reg-form .contain .form form .pass {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+    }
+    main .container .reg-form .contain .form form .sex input {
+        font-size: 20px;
+    }
+    main .container .reg-form .contain .form form .sex span {
+        font-size: 20px;
+    }
+    main .container .reg-form .contain .form form .sex div label {
+        font-size: 18px;
+    }
+    main .container .reg-form .contain .form form .btns {
+        gap: 18px;
+    }
+    main .container .reg-form .contain .form form .btns button {
+        padding: 12px;
+        font-size: 18px;
+    }
+    main .container .reg-form .contain>picture {
+        border-radius: 0 8px 8px 0;
+    }
+    main .container .table .contain table thead tr {
+        font-size: 13px;
+        border-radius: 8px 8px 0 0;
+    }
+    main .container .table .contain table tr td {
+        font-size: 12px;
+    }
+    td,
+    th {
+        padding: 12px;
+    }
+}
